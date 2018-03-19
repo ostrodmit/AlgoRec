@@ -1,4 +1,4 @@
-# Efficient First-Order Algorithms for Adaptive Signal Denoising
+# Efficient Algorithms for Adaptive Signal Denoising
 
 Matlab reproducible experiments from the following paper:
 
