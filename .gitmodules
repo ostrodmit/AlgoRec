@@ -1,0 +1,3 @@
+[submodule "AdaFilter"]
+	path = AdaFilter
+	url = https://github.com/ostrodmit/AdaFilter.git
