@@ -25,7 +25,7 @@ exp_certificates(N,ifReproduce);
 exp_complexity(N,ifReproduce);
 exp_sigm(N,ifReproduce);
 ```
-This will produce folders ``plots-<...>`` where ``<...>`` corresponds to the experiment. 
+Plots will appear in folders ``plots-<...>``, where ``<...>`` corresponds to the experiment. 
 
 Simulation data for the first four experiments will appear in folder ``sims-perf``, and for the last experiment in folder ``sims-sigm``.
 
