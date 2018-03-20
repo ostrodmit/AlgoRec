@@ -1,4 +1,4 @@
-# Efficient Algorithms for Adaptive Signal Denoising
+# Efficient First-Order Algorithms for Adaptive Signal Denoising
 
 Matlab reproducible experiments from the following preprint:
 
@@ -17,3 +17,17 @@ AlgoRec/AdaFilter/code
 ```
 
 ## Running the experiments
+The experiments, in the order of appearance in the paper, are launched via the following MATLAB commands: 
+```
+exp_perf_MP_random(N,ifReproduce);
+exp_perf_MP_coherent(N,ifReproduce);
+exp_certificates(N,ifReproduce);
+exp_complexity(N,ifReproduce);
+exp_sigm(N,ifReproduce);
+```
+Running a script with ``ifReproduce = 1`` will first launch simulations, and then produce plots for the obtained data. 
+After that, ``ifReproduce = 0`` can be used to produce the plots without running the simulations again.
+
+Parameter ``N`` corresponds the number of Monte-Carlo trials. To reproduce the figures from the paper, one must set ``N=20'' for ``exp_sigm`` and ``N=10`` in all other cases. Smaller values of ``N`` can be used to obtain the results faster at the expence of smaller confidence.
+
+The figures will appear in the folders with names.
