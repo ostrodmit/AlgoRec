@@ -4,7 +4,8 @@ Matlab reproducible experiments from the preprint:
 
 Dmitrii Ostrovskii, Zaid Harchaoui. Efficient First-Order Algorithms for Adaptive Signal Denoising. 
 
-We use [**AdaFilter**](https://github.com/ostrodmit/AdaFilter) codes for the efficient implementation of adaptive signal denoising, including them as a submodule. 
+We use [**AdaFilter**](https://github.com/ostrodmit/AdaFilter) codes for the efficient implementation of adaptive signal denoising, including them as a submodule.
+
 We also use [**CVX**](http://cvxr.com/cvx/) software for disciplined convex programming.
 
 ## Installation
