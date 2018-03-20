@@ -15,3 +15,5 @@ We also use [**CVX**](http://cvxr.com/cvx/) software for disciplined convex prog
 ```
 AlgoRec/AdaFilter/code
 ```
+
+## Running the experiments
