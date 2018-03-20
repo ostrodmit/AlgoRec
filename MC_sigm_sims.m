@@ -133,7 +133,7 @@ if strcmp(sce(1:6),'CohSin'),
     s = spikes/2;
     sce(8:end) = num2str(s);
 end
-respath = ['./plots-sigm/' sce '_' noise '/'];
+respath = ['./sims-sigm/' sce '_' noise '/'];
 if ~exist(respath, 'dir')
   mkdir(respath);
 end

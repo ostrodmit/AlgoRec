@@ -18,7 +18,7 @@ if r > 0,
     sce = [sce '-' num2str(r)];
 end
 if dim==1,
-    respath = ['./plots-sigm/' sce '_' noise '/'];
+    respath = ['./sims-sigm/' sce '_' noise '/'];
 % elseif dim==2,
 %     N=40;
 %     if strcmp(exper,'sin'),
@@ -155,6 +155,7 @@ for i = 1:2,
     set(gcf, 'PaperSize', [11.69 8.27]); % paper size (A4), landscape
     % Extend the plot to fill entire paper.
     set(gcf, 'PaperPosition', [0 0 11.69 8.27]);
+    respath = ['./plots-sigm/' sce '_' noise '/'];
     if i == 1,
         print('-depsc',[respath 'err_' sce '_' noise '.eps']);
         saveas(gcf,[respath 'err_' sce '_' noise '.pdf'],'pdf');
