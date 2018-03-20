@@ -32,4 +32,4 @@ Simulation data for the first four experiments will appear in folder ``sims-perf
 - Running a script with ``ifReproduce = 1`` will first launch simulations, and then produce plots for the obtained data. 
 After that, ``ifReproduce = 0`` can be used to produce the plots without running the simulations again.
 
-- Parameter ``N`` corresponds the number of Monte-Carlo trials. To reproduce the figures from the paper, one must set ``N=20`` for ``exp_sigm`` and ``N=10`` in all other cases. Smaller values of ``N`` can be used to obtain faster (and less precise) results.
+- ``N`` is the number of Monte-Carlo trials. To reproduce the figures from the paper, one must set ``N=20`` for ``exp_sigm`` and ``N=10`` in all other cases. Smaller values of ``N`` can be used to obtain faster (and less precise) results.
