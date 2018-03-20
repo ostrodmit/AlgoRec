@@ -11,10 +11,7 @@ We also use [**CVX**](http://cvxr.com/cvx/) software for disciplined convex prog
 ## Installation
 
 1. Make sure that CVX is installed on your computer (commercial license is not needed). CVX installation instructions can be found [here](http://cvxr.com/cvx/doc/install.html).
-2. Download or clone the repository, and add the following paths in **MATLAB**: 
+2. Download or clone the repository, and add the following path in **MATLAB**:
 ```
-L2Rec/AdaFilter/code
-L2Rec/AdaFilter/Brodatz
-L2Rec/nips16
-L2Rec/extra
+AlgoRec/AdaFilter/code
 ```
