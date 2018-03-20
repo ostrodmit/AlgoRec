@@ -25,7 +25,9 @@ exp_certificates(N,ifReproduce);
 exp_complexity(N,ifReproduce);
 exp_sigm(N,ifReproduce);
 ```
-The figures will appear in the folders with names.
+This will produce folders ``plots-<...>`` where ``<...>`` corresponds to the experiment. 
+
+Simulation data for the first four experiments will appear in folder ``sims-perf``, and for the last experiment in folder ``sims-sigm``.
 
 - Running a script with ``ifReproduce = 1`` will first launch simulations, and then produce plots for the obtained data. 
 After that, ``ifReproduce = 0`` can be used to produce the plots without running the simulations again.
