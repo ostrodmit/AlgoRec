@@ -1,20 +1,21 @@
-function [] = MC_perf_exp_complexity(reproduce)
-clearvars -except reproduce
+function [] = exp_complexity(N,reproduce)
+clearvars -except N reproduce
 % reproduce = 0: only draw plots
 % reproduce = 1: first reproduce the experiments
-if nargin == 0, 
+if nargin < 2, 
     reproduce = 0;
 end
-
-%% E3: Mirror Prox for UFR-Con; FGM for LSR-Con, with accuracy certificates.
-N = 20; % number of Monte-Carlo trials
+if nargin < 1,
+    N = 20; % number of Monte-Carlo trials
+end
+%% EXP: ``Statistical'' complexity of Mirror Prox for Con-UF, FGM for Con-LS
 SNR = logspace(log10(1/10),log10(100),11);
 base_sce = 'RanSin-';
 S = [4];
-outpath = './plots-exp_complexity/';
+outpath = './plots-complexity/';
 control = struct('w',100,'n',100,'verb',0,'iters',1000,'ada',1,'constr',1);
 nsim = 0;
-wb1 = waitbar(0,'E-complexity: overall progress','WindowStyle','modal');
+wb1 = waitbar(0,'EXP: overall progress','WindowStyle','modal');
 pos_wb1=get(wb1,'position');
 pos_wb2=[pos_wb1(1) pos_wb1(2)+pos_wb1(4) pos_wb1(3) pos_wb1(4)];
 control.wb_pos = pos_wb2;

@@ -63,7 +63,7 @@ for a=1:length(algos)
         for snrIdx = 1:numel(SNR),
             snr = SNR(snrIdx);
             control.snr = snr;
-            respath = [MC_perf_construct_name('./MC_perf_sims/',control) '/'];
+            respath = [MC_perf_construct_name('./sims-perf/',control) '/'];
             statfile = [respath 'stats-N-' num2str(N) '.mat'];
             load(statfile)
             if aIdx == 1, % MP, acc of the residual
@@ -132,6 +132,14 @@ end
 if ~exist(outpath, 'dir'),
   mkdir(outpath);
 end
-filename = [outpath title '_' 'sce=' control.sce '_p=' num2str(control.p) '_ada=' num2str(control.ada)];
+base_sce = control.sce(1:6);
+if strcmp(base_sce,'RanSin'),
+    sce = 'Random';
+    s = control.sce(8:end);
+elseif strcmp(base_sce,'CohSin'),
+    sce = 'Coherent';
+    s = num2str(str2num(control.sce(8:end))/2);
+end
+filename = [outpath title '_' 'sce=' sce '_s=' s '_p=' num2str(control.p) '_ada=' num2str(control.ada)];
 saveas(gcf,[filename '.pdf'],'pdf');
 end
