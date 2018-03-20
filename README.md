@@ -1,6 +1,6 @@
 # Efficient Algorithms for Adaptive Signal Denoising
 
-Matlab reproducible experiments from the preprint:
+Matlab reproducible experiments from the following preprint:
 
 Dmitrii Ostrovskii, Zaid Harchaoui. Efficient First-Order Algorithms for Adaptive Signal Denoising. 
 
