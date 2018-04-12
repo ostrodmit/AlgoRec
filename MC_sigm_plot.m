@@ -133,7 +133,7 @@ for i = 1:2,
         set(gca,'XMinorGrid','off');
         set(gca,'YminorTick','off');
         set(gca,'YMinorGrid','off');
-        l=legend('Lasso','LSR-Coarse','LSR-Fine','Location','southeast');
+        l=legend('Lasso','Coarse','Fine','Location','southeast');
     else
         gca
         set(gca,'YTick', [1e-3 1e-2 1e-1 1 1e1]);
@@ -141,7 +141,7 @@ for i = 1:2,
         set(gca,'XMinorGrid','off');
         set(gca,'YminorTick','off');
         set(gca,'YMinorGrid','off');
-        l=legend('Lasso','LSR-Coarse','LSR-Fine','Location','northeast');
+        l=legend('Lasso','Coarse','Fine','Location','northeast');
     end
     grid on
     %     if ifPost,
