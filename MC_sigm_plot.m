@@ -156,6 +156,9 @@ for i = 1:2,
     % Extend the plot to fill entire paper.
     set(gcf, 'PaperPosition', [0 0 11.69 8.27]);
     respath = ['./plots-sigm/' sce '_' noise '/'];
+    if ~exist(respath,'dir'),
+       mkdir(respath);
+    end    
     if i == 1,
         print('-depsc',[respath 'err_' sce '_' noise '.eps']);
         saveas(gcf,[respath 'err_' sce '_' noise '.pdf'],'pdf');
