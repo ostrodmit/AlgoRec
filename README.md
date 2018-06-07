@@ -1,8 +1,8 @@
 # Efficient First-Order Algorithms for Adaptive Signal Denoising
 
-Matlab reproducible experiments from the following preprint:
+Matlab reproducible experiments from the following paper:
 
-Dmitrii Ostrovskii, Zaid Harchaoui. Efficient First-Order Algorithms for Adaptive Signal Denoising. 
+Dmitrii Ostrovskii, Zaid Harchaoui. Efficient First-Order Algorithms for Adaptive Signal Denoising. ICML 2018.
 
 We use [**AdaFilter**](https://github.com/ostrodmit/AdaFilter) codes for the efficient implementation of adaptive signal denoising, including them as a submodule.
 
